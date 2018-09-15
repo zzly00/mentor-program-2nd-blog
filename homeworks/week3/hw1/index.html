@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>week3 hw1</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		h1{
+			margin: 0;
+			font-size: 72px;
+			font-weight: normal;
+		}
+		h3{
+			margin: 0;
+			font-size: 32px;
+			font-weight: normal;
+		}
+		p{
+			margin: 10px 0;
+			font-size: 16px;
+		}
+		.navbar{
+			padding: 0 10px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 50px;
+			background-color: #343a40;
+			color: #fff;
+			line-height: 50px;
+		}
+		.navbar__logo{
+			font-size: 20px;
+			display: inline-block;
+		}
+		.navbar ul{
+			margin: 0 0 0 5px;
+			padding: 0;
+			display: inline-block;
+			list-style: none;
+			color: #808080;
+		}
+		.navbar li{
+			margin-left: 15px;
+			display: inline-block;
+		}
+		.navbar li:hover{
+			cursor: pointer;
+			color: #fff;
+		}
+		.topic{
+			background-color: #e9ecef;
+		}
+		.topic__content{
+			margin: 50px auto 0 auto;
+			box-sizing: border-box;
+			padding: 40px 20px;
+			max-width: 1000px;
+		}
+		.button__more{
+			display: inline-block;
+			box-sizing: border-box;
+			padding: 15px 20px;
+			font-size: 20px;
+			color: #fff;
+			background-color: #007bff;
+			border-radius: 5px;
+		}
+		.button__more:hover{
+			cursor: pointer;
+			background-color: #0069d9;
+		}
+		.articles__float{
+			margin: 50px auto 40px auto;
+			max-width: 1000px;
+		}
+		.float{
+			float: left;
+			width: 33.33%;
+			box-sizing: border-box;
+			padding: 0 20px;
+		}
+		.clearfix{
+			width: 100%;
+			height: 0;
+			clear: both;
+		}
+		.articles__inlineblock{
+			margin: 40px auto;
+			max-width: 1000px;
+			font-size: 0;
+		}
+		.inlineblock{
+			display: inline-block;
+			box-sizing: border-box;
+			padding: 0 20px;
+			width: 33.33%;
+		}
+		.articles__flex{
+			margin: 40px auto;
+			max-width: 1000px;
+			box-sizing: border-box;
+			padding: 0 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.flex{
+			width: 32%;
+		}
+		.button__details{
+			display: inline-block;
+			box-sizing: border-box;
+			padding: 12px 10px;
+			font-size: 16px;
+			color: #fff;
+			background-color: #6c757d;
+			border-radius: 5px;
+		}
+		.button__details:hover{
+			cursor: pointer;
+			background-color: #5a6268;
+		}
+		.footer{
+			margin: 40px auto 0 auto;
+			max-width: 1000px;
+		}
+		.footer p{
+			margin: 0 20px;
+			box-sizing: border-box;
+			padding-top: 20px;
+			border-top: 1px solid #e5e5e5;
+		}
+		@media screen and (max-width: 720px){
+			.articles__float{
+				margin: 30px auto 0 auto;
+			}
+			.float{
+				margin-top: 20px;
+				width: 100%;
+			}
+			.articles__inlineblock{
+				margin: 0 auto;
+			}
+			.inlineblock{
+				margin-top: 20px;
+				width: 100%;
+			}
+			.articles__flex{
+				margin: 0 auto;
+				flex-direction: column;
+			}
+			.flex{
+				margin-top: 20px;
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<div class="navbar__logo">Navbar</div>
+		<ul>
+			<li>Home</li>
+			<li>Link</li>
+		</ul>
+	</div>
+	<div class="topic">
+		<div class="topic__content">
+			<h1>Hello, world!</h1>
+			<p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+			<div class="button__more">Learn more >></div>
+		</div>
+	</div>
+	<div class="articles__float">
+		<div class="float">
+			<h3>float</h3>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<div class="button__details">View details >></div>
+		</div>
+		<div class="float">
+			<h3>float</h3>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<div class="button__details">View details >></div>
+		</div>
+		<div class="float">
+			<h3>float</h3>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<div class="button__details">View details >></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="articles__inlineblock">
+		<div class="inlineblock">
+			<h3>inline-block</h3>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<div class="button__details">View details >></div>
+		</div>
+		<div class="inlineblock">
+			<h3>inline-block</h3>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<div class="button__details">View details >></div>
+		</div>
+		<div class="inlineblock">
+			<h3>inline-block</h3>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<div class="button__details">View details >></div>
+		</div>
+	</div>
+	<div class="articles__flex">
+		<div class="flex">
+			<h3>flex</h3>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<div class="button__details">View details >></div>
+		</div>
+		<div class="flex">
+			<h3>flex</h3>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<div class="button__details">View details >></div>
+		</div>
+		<div class="flex">
+			<h3>flex</h3>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			<div class="button__details">View details >></div>
+		</div>
+	</div>
+	<div class="footer"><p>&#9400;	Company 2017-2018</p></div>
+</body>
+</html>
