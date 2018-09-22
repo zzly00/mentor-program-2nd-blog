@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			for(let i=0; i<JSON.parse(request.responseText).streams.length; i++){
 				const resp = JSON.parse(request.responseText).streams[i];
 				const url = resp.channel.url;
-				const preview = resp.preview.large;
+				const preview = resp.preview.medium;
 				const avatar = resp.channel.logo;
 				const steamName = resp.channel.status;
 				const streamer = resp.channel.display_name;
