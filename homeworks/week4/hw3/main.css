@@ -39,7 +39,7 @@ body:before{
 	width: 300px;
 }
 .stream__url{
-	text-decoration:none;
+	text-decoration: none;
 }
 .stream:hover{
 	box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.5);
