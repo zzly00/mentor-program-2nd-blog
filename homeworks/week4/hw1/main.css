@@ -39,7 +39,7 @@ body{
 }
 .button:hover{
 	cursor: pointer;
-	filter: brightness(1.1);
+	filter: brightness(1.5);
 }
 .bottom div:nth-child(17){
 	box-sizing: border-box;

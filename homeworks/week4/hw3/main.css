@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	background: url(https://lolstatic-a.akamaihd.net/lolkit/1.1.6/resources/images/bg-default.jpg) no-repeat center;
+	background: url(https://lolstatic-a.akamaihd.net/lolkit/1.1.6/resources/images/bg-default.jpg) no-repeat;
 	background-attachment: fixed;
 }
 .container{
@@ -24,11 +24,12 @@ body{
 	width: 300px;
 }
 .stream__url{
-	text-decoration:none;
+	text-decoration: none;
 }
 .stream:hover{
 	box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.5);
 	filter: brightness(1.3);
+	-webkit-filter: brightness(1.3);
 	cursor: pointer;
 }
 .stream__preview img{
