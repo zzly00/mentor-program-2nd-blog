@@ -44,7 +44,6 @@ body:before{
 .stream:hover{
 	box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.5);
 	filter: brightness(1.3);
-	-webkit-filter: brightness(1.3);
 	cursor: pointer;
 }
 .stream__preview img{
@@ -75,7 +74,7 @@ body:before{
 	color: #fff;
 }
 .stream__name, .stream__streamer{
-	overflow:hidden;
+	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
