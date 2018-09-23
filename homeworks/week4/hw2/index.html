@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>week4 hw2</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<meta name="og:title" content="week4 hw2 仿 Google 表單">
+	<meta name="og:description" content="week4 hw2 仿 Google 表單">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="form.js"></script>
+</head>
+<body>
+	<div class="background__top"></div>
+	<div class="background__bottom">
+		<div class="content">
+			<h1 class="content__title">程式導師實驗計畫第二期報名表單</h1>
+			<p class="content__description">詳情請參考：<a href="https://medium.com/hulis-blog/mentor-program-s2-f876c4e13d3b">https://medium.com/hulis-blog/mentor-program-s2-f876c4e13d3b</a></p>
+			<p class="content__description">填完之後請務必按照文章內的說明再寄信給我，才算報名成功喔</p>
+			<p>*必填</p>
+			<form>
+				<div class="question required">
+					<div class="question__name" data-symbol="*">電子郵件地址 </div>
+					<div class="inputTextGroup">
+						<input type="email" placeholder="你的電子郵件" maxlength="100" class="question__input--text" />
+						<div class="underline"></div>
+					</div>
+					<p class="alert">這是必填問題</p>
+				</div>
+				<div class="question required">
+					<div class="question__name" data-symbol="*">暱稱 </div>
+					<p class="question__description">該如何稱呼你</p>
+					<div class="inputTextGroup">
+						<input type="text" placeholder="您的回答" maxlength="100" class="question__input--text" />
+						<div class="underline"></div>
+					</div>
+					<p class="alert">這是必填問題</p>
+				</div>
+				<div class="question required__radio">
+					<div class="question__name" data-symbol="*">報名類型 </div>
+					<input type="radio" name="class_type" value="從零到一基礎班（一個月後開始收保證金 3000，淘汰不退還，結業後兩個月內找到工作付一個月半薪水，沒工作不用付）" id="class1" /><label for="class1">從零到一基礎班（一個月後開始收保證金 3000，淘汰不退還，結業後兩個月內找到工作付一個月半薪水，沒工作不用付）</label><br />
+					<input type="radio" name="class_type" value="在職工程師加強班（一個月後開始收保證金 3000，兩個月時收學費 30000，被淘汰不退還）" id="class2" /><label for="class2">在職工程師加強班（一個月後開始收保證金 3000，兩個月時收學費 30000，被淘汰不退還）</label><br />
+					<p class="alert">這是必填問題</p>
+				</div>
+				<div class="question required">
+					<div class="question__name" data-symbol="*">現在的職業 </div>
+					<p class="question__description">範例：學生、前端工程師、待業中、業務</p>
+					<div class="inputTextGroup">
+						<input type="text" placeholder="您的回答" maxlength="100" class="question__input--text" />
+						<div class="underline"></div>
+					</div>					
+					<p class="alert">這是必填問題</p>
+				</div>
+				<div class="question required">
+					<div class="question__name" data-symbol="*">是否有程式相關背景？ </div>
+					<p class="question__description">範例：無、高中時候學過C++、學過一點網頁前端、目前在資策會上課...</p>
+					<div class="inputTextGroup">
+						<input type="text" placeholder="您的回答" maxlength="100" class="question__input--text" />
+						<div class="underline"></div>
+					</div>
+					<p class="alert">這是必填問題</p>
+				</div>
+				<div class="question option">
+					<div class="question__name">其他</div>
+					<p class="question__description">任何你想說的</p>
+					<div class="inputTextGroup">
+						<input type="text" placeholder="您的回答" maxlength="100" class="question__input--text" />
+						<div class="underline"></div>
+					</div>		
+				</div>
+				<input type="submit" value="提交" id="submit">
+				<p class="remind">請勿利用表單送出密碼。</p>
+			</form>
+		</div>
+		<div class="footer">
+			ooo 並未認可或建立這項內容。 檢舉濫用情形 - 服務條款 - 其他條款
+			<div>ooo 表單</div>
+		</div>
+	</div>
+</body>
+</html>
